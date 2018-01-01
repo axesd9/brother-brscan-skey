@@ -1,0 +1,9 @@
+[Service]
+User=brscan-skey
+Type=forking
+ExecStart=/opt/brother/scanner/brscan-skey/brscan-skey
+ExecStop=/opt/brother/scanner/brscan-skey/brscan-skey --terminate
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
